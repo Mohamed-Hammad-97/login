@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="container text-center text-white position-absolute top-50 start-50 ">
+        <h1 class=" fw-bolder my-5">Smart Login System</h1>
+        <div class="mx-4 my-4">
+            <input oninput="validName()" id="signupName" class="form-control my-3" placeholder="Enter your name"
+                type="text">
+            <p class="text-danger d-none" id="wrongName"> Please Enter First Letter Capital</p>
+            <input oninput="validEmail()" id="signupEmail" class="form-control my-3" placeholder="Enter your email"
+                type="email">
+            <p class="text-danger d-none" id="wrongEmail">Invalid Email Please </p>
+
+            <input id="signupPassword" class="form-control my-3" placeholder="Enter  password" type="password">
+            <p id="message" class="text-center text-danger d-none">All Inputs Is Required</p>
+            <button onclick="signUp()" class="btn position-relative overflow-hidden form-control fs-4 mb-3">
+                <span class="position-absolute"></span>
+                <span class="position-absolute"></span>
+                <span class="position-absolute"></span>
+                <span class="position-absolute"></span>
+                Sign Up</button>
+            <p class="text-white">You have an account? <a class='text-white' href='index.html'>Sign in</a></p>
+        </div>
+    </div>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
